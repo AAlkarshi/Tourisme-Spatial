@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;  
+    overflow-x: hidden;  
+    margin: 0;           
+    padding: 0;          
+}
+
+
+nav{
+    display: flex;
+    color: white; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 25px;
+
+    font-family: "Bellefair";
+    letter-spacing: 3px; 
+    text-transform:uppercase; 
+    align-items: center;  
+    position: relative;
+
+}
+
+
+#textexplore{
+    height: 200px; 
+    width: 200px; 
+    background-color: white; 
+    color: black; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size :32px;
+    font-weight: 400px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    font-family: "Bellefair";
+    letter-spacing: 1.25px;
+    line-height : 37px;
+
+}
+
+
+#englobeTextExplore{
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+#EnglobeOnglet {
+    padding: 15px;
+    backdrop-filter: blur(100px);
+    height: 100px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.ONGLET {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative; 
+}
+
+.ONGLET::after {
+    content: ""; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0%; 
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.ONGLET:hover::after {
+    width: 100%; 
+}
+
+
+
+
+
+
+
+
+#BarreHorizontal{
+    color: grey; 
+    width: 30%; 
+    align-items: center;
+    opacity: 0.25;
+    text-align: center;
+    align-content: center;
+    z-index: 2;
+    border-top: 2px solid grey;
+    position: absolute;
+    left: 100px;
+
+    margin-left: 64px;
+    margin-right: -25px;
+}
+
+#iconeIMG{
+    height: 40px;
+}
+
+#TitreSPACE{
+    color: white;
+    font-family:"Bellefair";
+    font-size: 80px;
+    letter-spacing: 8px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+
+
+#TextesousSPACE{
+    margin-top: 30px;
+    font-family: "Barlow_Condensed";
+    line-height: 1.5;
+    color: grey;
+
+}
+
+
+
+
+#EnglobeTEXTEGAUCHE {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    height: 100%; 
+    gap: 15px; 
+    left: 10%;
+    flex: 1;
+    width: 50%; 
+    position: relative;
+}
+
+
+
+
+#SECTIONPRINCIPALE{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    color: grey;
+    font-family: Arial, sans-serif;
+    height: 80vh; 
+
+}
+
+
+
+
+
+
+
+
+
+/* PARTIE DESTINATION  */
+
+#SectionChoixDestination{
+    width: 100%;
+}
+
+
+#TitreChoixDestination{
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-family: "Bellefair";
+    color: #ffffff;
+}
+
+
+
+#EnglobeLigneDestination{
+    width: 100%;
+    display: flex;
+}
+
+
+.NOMPLANETE{
+    font-family: "Bellefair";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
