@@ -56,7 +56,7 @@ nav{
 
 #EnglobeOnglet {
     padding: 15px;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(81.5485px);
     height: 100px;
     width: 70%;
     display: flex;
@@ -66,6 +66,13 @@ nav{
     box-sizing: border-box;
     position: relative;
     z-index: 1;
+    background: rgba(255,255,255,0.04);
+
+
+
+  
+
+    
 }
 
 .ONGLET {
@@ -75,6 +82,11 @@ nav{
     white-space: nowrap;
     text-decoration: none;
     position: relative; 
+    gap: 25px;
+    
+
+
+    
 }
 
 .ONGLET::after {
@@ -173,29 +185,120 @@ nav{
 
 
 
-
-
-
 /* PARTIE DESTINATION  */
+#ChoixDestination{
+    width:100%;
+    
 
-#SectionChoixDestination{
-    width: 100%;
 }
 
+#TitreNombrePage{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: .25;
+    font-size: 28px;
+    letter-spacing: 2.7px;
+}
+
+
+#TitrePage{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #d0d6f9;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2.7px;
+
+    
+}
 
 #TitreChoixDestination{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #d0d6f9;
+    font-size: 28px;
+    letter-spacing: 4.75px;
     text-transform: uppercase;
-    margin-top: 30px;
-    font-family: "Bellefair";
-    color: #ffffff;
-}
 
 
-
-#EnglobeLigneDestination{
-    width: 100%;
+    box-sizing: inherit;
     display: flex;
+    flex-direction: row;
+    gap: 28px;
 }
+
+
+
+#EnglobeLigneDestination {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+
+    padding: 0;
+    box-sizing: inherit;
+    margin: 64px 0 118px 0;
+
+    
+}
+
+
+#ChoixPlanete {
+    display: flex;
+    flex-direction: column; /* Dispose les éléments verticalement */
+    width: 100%; /* Prend toute la largeur disponible */
+    align-items: flex-start; /* Aligne les éléments au début */
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Espacement entre les sections */
+}
+
+
+#ChoixPlanete ul {
+    display: flex;
+    gap: 15px; /* Espacement horizontal entre les noms des planètes */
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+#ChoixPlanete ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#ChoixPlanete ul li a {
+    text-decoration: none; 
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 5px 10px; 
+    cursor: pointer;
+    border: 1px solid transparent; 
+    transition: border-color 0.3s ease; 
+    margin: 0;
+    box-sizing: inherit;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+
+
+}
+
+#ChoixPlanete ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+
 
 
 .NOMPLANETE{
@@ -203,4 +306,114 @@ nav{
     font-size: 20px;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+
+#IMGPLANETE {
+    max-width: 40%;
+    height: auto;   
+    margin-left: 65px;
+}
+
+
+
+
+.NOMDELAPLANETE{
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    color: #ffffff;
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    padding-top: 37px;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TextesousMARS {
+    color: white;
+    font-family: 'Bellefair';
+    margin-top: 20px;
+    line-height: 1.5;
+    display: none; /* Par défaut, le texte est masqué */
+}
+
+#TextesousMARS.active {
+    display: block; /* Montre le texte lorsque la classe 'active' est ajoutée */
+}
+
+#TextesousMARS h2,
+#TextesousMARS h3,
+#TextesousMARS h1 {
+    margin: 0; /* Supprime les marges */
+    padding: 5px 0; /* Ajoute un léger espacement vertical */
+}
+
+
+.EnglobeDistanceetDuree{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    text-align: center;
+}
+
+.TitreAVGDistance{
+    font-family: "Barlow Condensed", sans-serif;
+    color: #d0d6f9;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    text-transform: uppercase;
+}
+
+
+#TitreTravelTime{
+    font-family: "Barlow Condensed", sans-serif;
+    color: #d0d6f9;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    text-transform: uppercase;
+}
+
+
+
+.NombreDistanceKM{
+    font-family: "Bellefair", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+
+.AnneeVoyageTemps{
+    font-family: "Bellefair", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+
+.planetetexte{
+    padding-top: 14px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #d0d6f9;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 444px;
 }

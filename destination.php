@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="style.css"/> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap">
-    <script type="text/javascript"> href="script.js" </script> 
+    <script src="script.js" type="text/javascript" defer></script>
+
 
     <title>Destination</title>
 </head>
 
-<body style="background-image: url('assets/destination/background-destination-desktop.jpg'); margin: 0; background-size: cover; background-repeat: no-repeat; background-position: center;">
+<body style="background-image: url('assets/destination/background-destination-desktop.jpg'); margin: 0; background-size: cover; background-repeat: no-repeat; overflow-y: visible; background-position: center;">
 
 <nav>
     <!-- IMG DE FOND -->
@@ -32,33 +33,37 @@
 
 
 
-    <!-- Section principale -->
-    <section id="SectionChoixDestination">
+<!-- Section principale -->
+<div class="container" style="    margin: 0;
+    box-sizing: inherit;
+    padding: 0 24px;">
+<div id="ChoixDestination">
 
-        <h1 id="TitreChoixDestination"> 01 Pick Your Destination </h1>
-
-    <div id="EnglobeLigneDestination">
-        <img src="assets/destination/image-mars.png" style="height: 300px;">
-        
-
-            <div id="ChoixPlanete" >
-                <ul style="display: flex; color: white; font-family: Bellefair; width:20%; list-style-type:none; justify-content: space-around;">
-                    <button id="marsBtn">Mars</button>
-                    <button id="moonBtn">Moon</button>
-                    <button id="europaBtn">Europa</button>
-                    <button id="titanBtn">Titan</button>
-                </ul>
-            </div>
-
-            <div>
-                <p id="TextesousMARS" style="color: #ffffff;">
-                    
-                </p>
-            </div>
+    <div id="TitreChoixDestination">  
+       <div id="TitreNombrePage"> 01 </div> 
+       <div id="TitrePage"> Pick Your Destination </div>
     </div>
 
-    </section>
-
+    <div id="EnglobeLigneDestination">
+            <img id="IMGPLANETE" src="" alt="Image de la planète">
+        
+        
+        <div id="ChoixPlanete" >
+            <ul>
+                <li><a id="marsBtn" onclick="showPlanetInfo('mars')" >Mars</a></li>
+                <li><a id="moonBtn" onclick="showPlanetInfo('moon')">Moon</a></li>
+                <li><a id="europaBtn" onclick="showPlanetInfo('europa')">Europa</a></li>
+                <li><a id="titanBtn" onclick="showPlanetInfo('titan')">Titan</a></li>
+            </ul>
+            
+            <!-- Informations de la planète -->
+            <div id="TextesousMARS" style="color: white; font-family: Bellefair;">
+                    <!-- infos seront injectées ici avec JS -->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 
