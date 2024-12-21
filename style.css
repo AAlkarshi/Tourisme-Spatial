@@ -483,9 +483,8 @@ nav{
 #ChoixEquipage {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between; /* Ajoute de l'espace entre les éléments gauche et droit */
+    justify-content: space-between; 
     width: 100%; 
-
     gap: 10%;
     margin: 0;
     padding: 0;
@@ -496,30 +495,27 @@ nav{
 }
 
 #ChoixEquipage ul {
-
-    list-style: none; /* Supprime les puces */
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
 
 #ChoixEquipage #texteEquipage {
     flex-grow: 1; 
-
 }
 
 
 #texteEquipage{
     padding-top: 154px;
-
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
 #ChoixEquipage img {
-    max-width: 300px; /* Ajuste la largeur maximale de l'image */
-    height: auto; /* Maintient le ratio de l'image */
-    align-self: flex-start; /* Aligne l'image en haut */
+    max-width: 300px; 
+    height: auto; 
+    align-self: flex-start; 
 }
 
 
@@ -529,21 +525,8 @@ nav{
     gap: 20%;
     padding: 0;
     box-sizing: inherit;
-
-
-
-
-
     margin: 0;
-
-
     justify-content: space-between;
-    align-items: center;
-    flex-direction: column-reverse;
-
-
-
-
     flex-direction: row;
     align-items: flex-end;
 }
@@ -591,9 +574,6 @@ nav{
     margin: 0;
     width:100%;
     justify-content: flex-start;
-    
-
-
     padding: 0;
     box-sizing: inherit;
     margin: 90px 0 61px 0;
