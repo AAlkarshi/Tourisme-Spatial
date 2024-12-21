@@ -144,3 +144,116 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  EQUIPAGE  */
+document.addEventListener("DOMContentLoaded", function () {
+    const CommanderBtn = document.querySelector("#Commander");
+    const MissionSpecialistBtn = document.querySelector("#MissionSpecialist");
+    const PilotBtn = document.querySelector("#Pilot");
+    const FlightEngineerBtn = document.querySelector("#FlightEngineer");
+    const texteEquipage = document.querySelector("#texteEquipage");
+
+    function showEquipageInfo(equipage , role) {
+        const infoEquipage = document.getElementById('texteEquipage');
+        let ImgEquipage = document.getElementById('IMGMembreEquipage');
+
+        
+
+        // Remise à zéro du contenu de la div
+        infoEquipage.innerHTML = "";
+        ImgEquipage.src = "";
+        
+        switch (equipage) {
+            case 'Commander':
+                infoEquipage.innerHTML = `
+                    <h1 class="NomRoleEquipage">Commander </h1>
+                    <h1 class="NomMembreEquipage">Douglas Hurley </h1>
+
+                    <p class="planetetexte">
+                    Douglas Gerald Hurley is an American engineer, former <br>
+                    Marine Corps pilot and former NASA astronaut. He <br> 
+                    launched into space for the third time as commander of <br>
+                    Crew Dragon Demo-2.
+                    </p> `;
+                ImgEquipage.src = "assets/crew/image-douglas-hurley.png";
+                break;
+
+                case 'MissionSpecialist':
+                    infoEquipage.innerHTML = `
+                        <h1 class="NomRoleEquipage">Mission Specialist</h1>
+                        <h1 class="NomMembreEquipage">Mark Shuttleworth</h1>
+                
+                        <p class="planetetexte">
+                        Mark Richard Shuttleworth is the founder and CEO of <br>
+                        Canonical, the company behind the Linux-based Ubuntu <br>
+                        operating system. Shuttleworth became the first South <br>
+                        African to travel to space as a space tourist.
+                        </p> `;
+                    ImgEquipage.src = "assets/crew/image-mark-shuttleworth.png";
+                    break;
+                
+
+                case 'Pilot':
+                    infoEquipage.innerHTML = `
+                        <h1 class="NomRoleEquipage">Pilot </h1>
+                        <h1 class="NomMembreEquipage">Victor Glover </h1>
+
+                        <p class="planetetexte">
+                        Pilot on the first operational flight of the SpaceX Crew <br>
+                        Dragon to the International Space Station. Glover is a <br>
+                        commander in the U.S. Navy where he pilots an F/A <br>
+                        -18.He was a crew member of Expedition 64, and served <br>
+                        as a station systems flight engineer.
+                        </p> `;  
+                ImgEquipage.src = "assets/crew/image-victor-glover.png";
+                break;
+
+                case 'FlightEngineer':
+                    infoEquipage.innerHTML = `
+                        <h1 class="NomRoleEquipage">Flight Engineer</h1>
+                        <h1 class="NomMembreEquipage">Anousheh Ansari</h1>
+                        
+                        <p class="planetetexte" >
+                        Anousheh Ansari is an Iranian American engineer and <br>
+                        co-founder of Prodea Systems. Ansari was the fourth self-funded <br>
+                        space tourist, the first self-funded woman <br>
+                        to fly to the ISS, and the first Iranian in space.
+                        </p>`;
+                ImgEquipage.src = "assets/crew/image-anousheh-ansari.png";
+                break;
+        }
+
+       
+        
+
+        infoEquipage.classList.add('active');
+    }
+
+    CommanderBtn.addEventListener("click", () => showEquipageInfo("Commander"));
+    MissionSpecialistBtn.addEventListener("click", () => showEquipageInfo("MissionSpecialist"));
+    PilotBtn.addEventListener("click", () => showEquipageInfo("Pilot"));
+    FlightEngineerBtn.addEventListener("click", () => showEquipageInfo("FlightEngineer"));
+
+
+     //  Commander par défaut
+     showEquipageInfo('Commander');
+});
+
+

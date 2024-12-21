@@ -70,6 +70,7 @@ nav{
 
 
 
+
   
 
     
@@ -83,6 +84,7 @@ nav{
     text-decoration: none;
     position: relative; 
     gap: 25px;
+    font-family: "Bellefair", sans-serif;
     
 
 
@@ -185,6 +187,43 @@ nav{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PARTIE DESTINATION  */
 #ChoixDestination{
     width:100%;
@@ -254,19 +293,19 @@ nav{
 
 #ChoixPlanete {
     display: flex;
-    flex-direction: column; /* Dispose les éléments verticalement */
-    width: 100%; /* Prend toute la largeur disponible */
-    align-items: flex-start; /* Aligne les éléments au début */
+    flex-direction: column; 
+    width: 100%; 
+    align-items: flex-start;
     margin: 0;
     padding: 0;
-    gap: 20px; /* Espacement entre les sections */
+    gap: 20px; 
 }
 
 
 #ChoixPlanete ul {
     display: flex;
-    gap: 15px; /* Espacement horizontal entre les noms des planètes */
-    list-style: none; /* Supprime les puces */
+    gap: 15px; 
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
@@ -350,18 +389,18 @@ nav{
     font-family: 'Bellefair';
     margin-top: 20px;
     line-height: 1.5;
-    display: none; /* Par défaut, le texte est masqué */
+    display: none; 
 }
 
 #TextesousMARS.active {
-    display: block; /* Montre le texte lorsque la classe 'active' est ajoutée */
+    display: block;
 }
 
 #TextesousMARS h2,
 #TextesousMARS h3,
 #TextesousMARS h1 {
-    margin: 0; /* Supprime les marges */
-    padding: 5px 0; /* Ajoute un léger espacement vertical */
+    margin: 0; 
+    padding: 5px 0; 
 }
 
 
@@ -417,3 +456,163 @@ nav{
     line-height: 32px;
     max-width: 444px;
 }
+
+.NomRoleEquipage{
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    opacity: .5;
+}
+
+.NomMembreEquipage{
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0;
+    margin: 15px 0 27px 0;
+}
+
+
+
+#ChoixEquipage {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; /* Ajoute de l'espace entre les éléments gauche et droit */
+    width: 100%; 
+
+    gap: 10%;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    align-items: flex-end;
+
+    padding-top: 154px;
+}
+
+#ChoixEquipage ul {
+
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+#ChoixEquipage #texteEquipage {
+    flex-grow: 1; 
+
+}
+
+
+#texteEquipage{
+    padding-top: 154px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+#ChoixEquipage img {
+    max-width: 300px; /* Ajuste la largeur maximale de l'image */
+    height: auto; /* Maintient le ratio de l'image */
+    align-self: flex-start; /* Aligne l'image en haut */
+}
+
+
+#EnglobeLigneEquipage{
+    display: flex;
+    width: 100%;
+    gap: 20%;
+    padding: 0;
+    box-sizing: inherit;
+
+
+
+
+
+    margin: 0;
+
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+
+
+
+
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+
+
+.crew__role-btn {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    border: none;
+    transition: all .5s;
+    cursor: pointer;
+    background-color: #ffffff !important;
+    opacity: 1;
+    margin: 90px 0 61px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.crew__role-btn:hover {
+    background-color: #ccc; 
+    transform: scale(1.05); 
+}
+
+.crew__role-btn.selected {
+    background-color: #555; 
+    color: white; 
+}
+
+.container{
+    margin: 0;
+    box-sizing: inherit;
+    padding: 0  70px;
+}
+
+#PointBlanc{
+    display: flex;
+    flex-direction : row;
+    gap: 15px;
+    margin: 0;
+    width:100%;
+    justify-content: flex-start;
+    
+
+
+    padding: 0;
+    box-sizing: inherit;
+    margin: 90px 0 61px 0;
+    display: flex;
+    gap: 15px;
+
+
+}
+
+
+#IMGMembreEquipage{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+
+    
+}
+
+

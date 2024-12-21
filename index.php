@@ -24,7 +24,7 @@
 <div id="EnglobeOnglet">
     <a class="ONGLET" href="index.php"> <b>00 </b> Home</a>
     <a class="ONGLET" href="destination.php">  <b>01 </b> Destination</a>
-    <a class="ONGLET"> <b>02 </b> Crew</a>
+    <a class="ONGLET" href="equipage.php"> <b>02 </b> Crew</a>
     <a class="ONGLET"> <b>03 </b> Technology</a>
 </div>
 
