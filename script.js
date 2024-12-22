@@ -257,3 +257,105 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  TECHNOLOGY  */
+document.addEventListener("DOMContentLoaded", function () {
+    const NumeroBtn1 = document.querySelector("#Btn1");
+    const NumeroBtn2 = document.querySelector("#Btn2");
+    const NumeroBtn3 = document.querySelector("#Btn3");
+    const texteTechnology = document.querySelector("#texteTechnology");
+
+    function showTechnologyInfo(technology) {
+        const infoTechnology = document.getElementById('texteTechnology');
+        let ImgTechnology = document.getElementById('IMGTechnology');
+
+
+        document.querySelectorAll(".btnNumerote").forEach(button => button.classList.remove("active"));
+
+        // Ajouter  active au bouton correspondant
+        const activeButton = document.getElementById(technology);
+        activeButton.classList.add("active");
+
+        
+
+        infoTechnology.innerHTML = "";
+        ImgTechnology.src = "";
+        
+        switch (technology) {
+            case 'Btn1':
+                infoTechnology.innerHTML = `
+                    <h1 class="NomTech">The terminology.. </h1>
+                    <h1 class="NomTechAffiche">Launch vehicle </h1>
+
+                    <p class="TexteTech">
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to <br>
+                    carry a payload from Earth's surface to space, usually to Earth orbit or <br>
+                    beyond. Our WEB-X carrier rocket is the most powerful in operation. <br>
+                    Standing 150 metres tall, it's quite an awe-inspiring sight on the launch <br>
+                    pad!
+                    </p> `;
+                ImgTechnology.src = "assets/technology/image-launch-vehicle-portrait.jpg";
+                break;
+
+            case 'Btn2':
+                infoTechnology.innerHTML = `
+                    <h1 class="NomTech">The terminology..</h1>
+                    <h1 class="NomTechAffiche">Spaceport</h1>
+                
+                    <p class="TexteTech">
+                    A spaceport or cosmodrome is a site for launching (or receiving) <br>
+                    spacecraft, by analogy to the seaport for ships or airport for aircraft. <br>
+                    Based in the famous Cape Canaveral, our spaceport is ideally situated to <br>
+                    take advantage of the Earth’s rotation for launch.
+                    </p> `;
+                ImgTechnology.src = "assets/technology/image-spaceport-portrait.jpg";
+                break;
+                
+
+            case 'Btn3':
+            infoTechnology.innerHTML = `
+                    <h1 class="NomTech">The terminology.. </h1>
+                    <h1 class="NomTechAffiche">Space capsule </h1>
+
+                    <p class="TexteTech">
+                    A space capsule is an often-crewed spacecraft that uses a blunt-body <br>
+                    reentry capsule to reenter the Earth's atmosphere without wings. Our <br>
+                    capsule is where you'll spend your time during the flight. It includes a <br>
+                    space gym, cinema, and plenty of other activities to keep you <br>
+                    entertained.
+                    </p> `;  
+                ImgTechnology.src = "assets/technology/image-space-capsule-portrait.jpg";
+                break;
+        }
+
+        infoTechnology.classList.add('active');
+    }
+
+    NumeroBtn1.addEventListener("click", () => showTechnologyInfo("Btn1"));
+    NumeroBtn2.addEventListener("click", () => showTechnologyInfo("Btn2"));
+    NumeroBtn3.addEventListener("click", () => showTechnologyInfo("Btn3"));
+
+     //  Btn1 par défaut
+     showTechnologyInfo('Btn1');
+});
+

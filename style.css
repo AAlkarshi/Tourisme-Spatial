@@ -565,6 +565,8 @@ nav{
     margin: 0;
     box-sizing: inherit;
     padding: 0  70px;
+
+    
 }
 
 #PointBlanc{
@@ -596,3 +598,189 @@ nav{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TECHNOLOGY */
+
+#ChoixTechnology{
+    margin: 0;
+    box-sizing: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0 101px 165px;
+}
+
+
+
+
+
+
+
+
+
+
+#texteTechnology {
+    order: 2; /* Le texte apparaît après les boutons */
+    flex: 1; /* Remplit le reste de l'espace disponible */
+}
+
+
+
+#NumeroPointBlanc{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    order: 1; /* Ordres des boutons apparaissent avant */
+    color: white;
+    list-style-type: none;
+
+
+
+}
+
+
+.btnNumerote{
+    display: flex;
+    flex-direction: column;
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-sizing: border-box;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: border .3s;
+    cursor: pointer; 
+    background-color: #0b0d17;
+    color: white;
+}
+
+
+
+
+.btnNumerote:hover{    
+    border: 1px solid white;
+}
+
+
+.btnNumerote:focus,
+.btnNumeroteInput:checked + .btnNumerote {
+    background-color: #ffffff;
+    color: #0b0d17;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+.btnNumerote.active {
+    background-color: #ffffff; /* Fond blanc */
+    color: #0b0d17;           /* Texte noir */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Bordure */
+}
+
+
+
+
+#EnglobeLigneTech{
+    display: flex;
+    width: 100%;
+    box-sizing: inherit;
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+    align-items: center;
+
+    padding: 0;
+}
+
+.NomTechAffiche{
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0;
+    margin: 11px 0 17px 0;
+}
+
+
+#ChoixTech {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 100%; 
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    align-items: center;
+
+
+
+}
+
+
+
+.NomTech{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #d0d6f9;
+}
+
+
+
+.TexteTech{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #d0d6f9;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 444px;
+}

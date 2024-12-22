@@ -9,10 +9,10 @@
     <script src="script.js" type="text/javascript" defer></script>
 
 
-    <title>Destination</title>
+    <title>Technology</title>
 </head>
 
-<body style="background-image: url('assets/destination/background-destination-desktop.jpg'); margin: 0; background-size: cover; background-repeat: no-repeat; overflow-y: visible; background-position: center;">
+<body style="background-image: url('assets/technology/background-technology-desktop.jpg'); margin: 0; background-size: cover; background-repeat: no-repeat; overflow-y: visible; background-position: center;">
 
 <nav>
     <!-- IMG DE FOND -->
@@ -34,36 +34,38 @@
 
 
 <!-- Section principale -->
-<div class="container" style="    margin: 0;
-    box-sizing: inherit;
-    padding: 0 24px;">
-<div id="ChoixDestination">
-
+<div class="container" >
     <div id="TitreChoixDestination">  
-       <div id="TitreNombrePage"> 01 </div> 
-       <div id="TitrePage"> Pick Your Destination </div>
+       <div id="TitreNombrePage"> 03 </div> 
+       <div id="TitrePage"> Space launch 101 </div>
     </div>
+</div>
 
-    <div id="EnglobeLigneDestination">
-            <img id="IMGPLANETE" src="" alt="Image de la planète">
+
+    <div id="ChoixTechnology"> 
+
+    
+
+    <div id="EnglobeLigneTech">   
         
-        
-        <div id="ChoixPlanete" >
-            <ul>
-                <li><a id="marsBtn" onclick="showPlanetInfo('mars')" >Mars</a></li>
-                <li><a id="moonBtn" onclick="showPlanetInfo('moon')">Moon</a></li>
-                <li><a id="europaBtn" onclick="showPlanetInfo('europa')">Europa</a></li>
-                <li><a id="titanBtn" onclick="showPlanetInfo('titan')">Titan</a></li>
-            </ul>
-            
-            <!-- Informations de la planète -->
-            <div id="TextesousMARS" style="color: white; font-family: Bellefair;">
-                    <!-- infos seront injectées ici avec JS -->
+        <div id="ChoixTech">
+            <div id="texteTechnology" style="color: white; font-family: Bellefair;">
+                <!-- infos seront injectées ici avec JS -->
             </div>
+
+             <!-- POINT BLANC -->
+             <ul id="NumeroPointBlanc">
+                <li><button id="Btn1" class="btnNumerote active" onclick="showTechnologyInfo('Btn1')" > 1 </button></li>
+                <li><button id="Btn2" class="btnNumerote" onclick="showTechnologyInfo('Btn2')"> 2 </button></li>
+                <li><button id="Btn3" class="btnNumerote" onclick="showTechnologyInfo('Btn3')"> 3 </button></li>
+            </ul>
+        </div>
+     
+             <img id="IMGTechnology" src="" alt="Image de la Technologie">
+          
+        
         </div>
     </div>
-</div>
-</div>
 
 
 
