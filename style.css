@@ -67,13 +67,6 @@ nav{
     position: relative;
     z-index: 1;
     background: rgba(255,255,255,0.04);
-
-
-
-
-  
-
-    
 }
 
 .ONGLET {
@@ -85,10 +78,7 @@ nav{
     position: relative; 
     gap: 25px;
     font-family: "Bellefair", sans-serif;
-    
-
-
-    
+     
 }
 
 .ONGLET::after {
@@ -108,7 +98,12 @@ nav{
 
 
 
-
+#texteDebut{
+    letter-spacing: 4px;
+    text-transform: uppercase; 
+    color: #ffffff; 
+    font-family:"Bellefair";
+}
 
 
 
@@ -784,3 +779,528 @@ nav{
     line-height: 32px;
     max-width: 444px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* BTN BURGER Style de base */
+    #menuButton {
+        background: none;
+        border: none;
+        cursor: pointer;
+        visibility: visible;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+
+    #hamburgerIcon {
+        display: block; /* Assurez-vous que l'icône est visible */
+        color: white;
+        width: auto; /* Ajustez la taille de l'icône selon vos besoins */
+        height: auto; 
+        visibility: collapse;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* ENTRE TABLETTE 768px et ORDI 1023*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #CORPS {
+      background-image: url('assets/home/background-home-tablet.jpg') !important;
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-position: center; 
+      overflow-y: scroll;
+    }
+
+    /*ICONE*/
+    #iconeIMG{
+        height: 48px;
+        width: 48px;
+    }
+
+    #SECTIONPRINCIPALE {
+        display: flex;
+        width: 100%;
+
+        margin: 0;
+        box-sizing: inherit;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 48px 24px 24px 24px;
+    }
+
+    #texteDebut{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #EnglobeTEXTEGAUCHE {
+        all: unset; /*SUPPRIME les styles hérité des parents*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+    #EnglobeTEXTEGAUCHE p {
+        gap: 15px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin: 0;
+        box-sizing: inherit;
+        font-family: "Barlow Condensed", sans-serif;
+        color: #d0d6f9;
+        font-size: 18px;
+        line-height: 32px;
+        padding: 24px 0 0 0;
+        
+    }
+
+   
+
+
+    #TitreSPACE{
+        text-align: center;
+        font-family: "Bellefair", sans-serif;
+        color: #ffffff;
+        font-size: 150px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        line-height: 172px;
+        padding-top: 16px;
+        width: 100%;
+    }
+
+
+
+    
+    #TextesousSPACE{
+        text-align: center;
+        font-family: "Barlow Condensed", sans-serif;
+        color: #d0d6f9;
+        font-size: 18px;
+        line-height: 32px;
+        word-wrap: break-word;
+        margin: 0;
+        box-sizing: inherit;
+        max-width: 100%;
+        padding: 24px 0 156px 0;
+
+        
+    }
+
+
+
+
+
+
+
+
+    nav{
+        color: white; 
+        flex-direction: row; 
+        width: 100%; 
+    
+        font-family: "Bellefair";
+        letter-spacing: 3px; 
+        text-transform:uppercase; 
+
+        gap:50px;
+        margin: 0;
+        box-sizing: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0 0 40px 39px;
+    }
+
+
+    .ONGLET {
+        color: #ffffff;
+        font-size: 16px;
+        margin: 0;
+        white-space: nowrap;
+        text-decoration: none;
+        position: relative; 
+        font-family: "Bellefair", sans-serif;
+        justify-content: center;
+        text-align: center;
+
+        padding: 0;
+        box-sizing: inherit;
+        display: flex;
+        
+           
+    }
+
+    
+
+
+    #EnglobeOnglet {
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        background: rgba(255,255,255,0.04);
+        backdrop-filter: blur(81.5485px);
+
+
+        box-sizing: inherit;
+        gap: 50px;
+        padding: 0 47px 0 0;
+    }
+
+
+    /*NUMERO CACHER ET PERDENT LEURS ESPACE*/
+    #EnglobeOnglet > a > b{
+        display: none;
+    }
+
+    #BarreHorizontal{
+        display: none;
+    }
+    
+    /* ROND BLANC ACCUEIL*/
+    #englobeTextExplore{
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+       
+    }
+    
+    
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* POUR MOBILE SOUS 768px */
+@media screen and (max-width: 768px)  {
+    #CORPS {
+      background-image: url('assets/home/background-home-mobile.jpg') !important;
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-position: center; 
+    }
+
+
+
+
+
+     /*ICONE*/
+     #iconeIMG{
+        height: 48px;
+        width: 48px;
+    }
+
+    #SECTIONPRINCIPALE {
+        display: flex;
+        width: 100%;
+
+        margin: 0;
+        box-sizing: inherit;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 48px 24px 24px 24px;
+    }
+
+    #texteDebut{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #EnglobeTEXTEGAUCHE {
+        all: unset; /*SUPPRIME les styles hérité des parents*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+    #EnglobeTEXTEGAUCHE p {
+        gap: 15px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin: 0;
+        box-sizing: inherit;
+        font-family: "Barlow Condensed", sans-serif;
+        color: #d0d6f9;
+        font-size: 18px;
+        line-height: 32px;
+        padding: 24px 0 0 0;
+        
+    }
+
+   
+
+
+    #TitreSPACE{
+        width: 100%;
+        text-align: center;
+        box-sizing: inherit;
+        font-family: "Bellefair", sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-size: 80px;
+        line-height: 100px;
+        padding-top: 16px;
+    }
+
+
+
+    
+    #TextesousSPACE{
+        box-sizing: inherit;
+        font-family: "Barlow Condensed", sans-serif;
+        color: #d0d6f9;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+        padding: 16px 0 81px 0;  
+    }
+
+
+
+
+
+
+    nav{
+        color: white; 
+        flex-direction: row; 
+        justify-content: space-between;
+        margin: 0;
+        box-sizing: inherit;
+        align-items: center;
+        display: flex;
+        padding: 20px;
+    }
+
+    /*ENSEMBLE DES ONGLETS*/
+    #EnglobeOnglet {     
+        visibility: hidden; 
+        right:-100%;   
+        width: 35%;
+        color:white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1000;
+        top: 0;
+}
+
+     /* AFFICHAGE MENU classe 'show' */
+    #EnglobeOnglet.show {
+        right: 0;  /*Le menu glisse dans l'écran */
+        visibility: visible;
+        transition: right 0.5s ease-in-out, visibility 0s 0s;
+        color: white;
+        
+    }
+
+
+     /* Liens des onglets */
+     #EnglobeOnglet a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+
+
+
+
+
+    /* BTN hamburger PAR DEF */
+    #hamburgerIcon {
+        background-color: red;
+        visibility: visible;
+        cursor: pointer;
+        display: block;
+    }
+
+
+     /* Style des onglets dans le menu */
+     .ONGLET {
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+
+
+   
+
+
+
+    /*Par défaut NON VISIBLE la CROIX*/
+    #closeIcon {
+        /*
+        visibility: visible;
+        opacity: 0;
+        */
+        display: none;
+    }
+
+
+      /* Bouton est visible */
+      #menuButton {
+        display: flex;
+        width: 50px;
+        height: 50px; 
+        cursor: pointer;
+
+        z-index: 2000;
+
+        position: fixed; 
+        right: 20px;
+
+        top: 20px;
+        font-size: 24px;
+        opacity: 1;
+        visibility: visible;
+
+
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+    }
+
+
+      
+
+    #BarreHorizontal{
+        display: none;
+    }
+
+
+
+    
+
+
+}
+

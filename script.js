@@ -359,3 +359,28 @@ document.addEventListener("DOMContentLoaded", function () {
      showTechnologyInfo('Btn1');
 });
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById('menuButton');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    const EnglobeOnglet = document.getElementById('EnglobeOnglet');
+
+    menuButton.addEventListener('click', () => {
+        EnglobeOnglet.classList.toggle('show');
+
+        const isMenuOpen = EnglobeOnglet.classList.contains('show');
+        hamburgerIcon.style.display = isMenuOpen ? 'none' : 'block';
+        closeIcon.style.display = isMenuOpen ? 'block' : 'none';
+    });
+});
+
+
+
+
+
+
+
+
