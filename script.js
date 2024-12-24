@@ -362,20 +362,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menuButton');
+    const englobeOnglet = document.getElementById('EnglobeOnglet');
     const hamburgerIcon = document.getElementById('hamburgerIcon');
     const closeIcon = document.getElementById('closeIcon');
-    const EnglobeOnglet = document.getElementById('EnglobeOnglet');
 
     menuButton.addEventListener('click', () => {
-        EnglobeOnglet.classList.toggle('show');
+        // Basculer la classe "visible" sur EnglobeOnglet
+        englobeOnglet.classList.toggle('visible');
+        console.log('Menu toggled:', englobeOnglet.classList.contains('visible'));
 
-        const isMenuOpen = EnglobeOnglet.classList.contains('show');
-        hamburgerIcon.style.display = isMenuOpen ? 'none' : 'block';
-        closeIcon.style.display = isMenuOpen ? 'block' : 'none';
+        // Basculer entre hamburgerIcon et closeIcon
+        const isMenuVisible = englobeOnglet.classList.contains('visible');
+        if (isMenuVisible) {
+            hamburgerIcon.style.display = 'none';
+            closeIcon.style.display = 'inline-block';
+        } else {
+            hamburgerIcon.style.display = 'inline-block';
+            closeIcon.style.display = 'none';
+        }
     });
 });
+
 
 
 

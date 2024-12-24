@@ -1188,107 +1188,100 @@ nav{
 
 
 
-    nav{
-        color: white; 
-        flex-direction: row; 
-        justify-content: space-between;
-        margin: 0;
-        box-sizing: inherit;
-        align-items: center;
-        display: flex;
-        padding: 20px;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    padding-top: 25px;
+}
+
+
+
 
     /*ENSEMBLE DES ONGLETS*/
     #EnglobeOnglet {     
-        visibility: hidden; 
-        right:-100%;   
-        width: 35%;
-        color:white;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        z-index: 1000;
-        top: 0;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;  
+        right: 0;
+        background: rgba(255,255,255,0.04);
+        opacity: 0.1;
+        backdrop-filter: blur(81.5485px);
+        transition: all .8s;
+        display: block;
+        padding-top: 80px;
+        height: 100%;
+        width: 45%;
+        visibility: hidden;
 }
 
-     /* AFFICHAGE MENU classe 'show' */
-    #EnglobeOnglet.show {
-        right: 0;  /*Le menu glisse dans l'écran */
+
+
+    /* Onglets visibles */
+    #EnglobeOnglet.visible {
+        opacity: 1;
         visibility: visible;
-        transition: right 0.5s ease-in-out, visibility 0s 0s;
-        color: white;
-        
+        height: 100%;
+        width: 45%;
+        z-index: 1000;
+        right:0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
     }
 
-
-     /* Liens des onglets */
-     #EnglobeOnglet a {
-        color: white;
+     /* Liens des onglets et Style des onglets dans le menu */
+     .ONGLET {
+        margin: 20px;  
         text-decoration: none;
+        color: white;
         font-size: 20px;
-        padding: 10px 0;
     }
-
-
-
-
-
 
     /* BTN hamburger PAR DEF */
     #hamburgerIcon {
-        background-color: red;
-        visibility: visible;
-        cursor: pointer;
-        display: block;
-    }
-
-
-     /* Style des onglets dans le menu */
-     .ONGLET {
-        font-size: 18px;
-        transition: background-color 0.3s ease;
-    }
-
-
-   
-
-
-
-    /*Par défaut NON VISIBLE la CROIX*/
-    #closeIcon {
-        /*
-        visibility: visible;
-        opacity: 0;
-        */
-        display: none;
-    }
-
-
-      /* Bouton est visible */
-      #menuButton {
-        display: flex;
-        width: 50px;
-        height: 50px; 
-        cursor: pointer;
-
-        z-index: 2000;
-
-        position: fixed; 
-        right: 20px;
-
-        top: 20px;
-        font-size: 24px;
-        opacity: 1;
-        visibility: visible;
-
-
-        align-items: center;
-        justify-content: center;
         color: white;
-
+        visibility: visible;
+        display: inline-block;
     }
+
+    /*Par défaut NON VISIBLE le X*/
+    #closeIcon {
+        color: grey;
+        display: none; /*CACHER PAR DEF*/
+    }
+
+    /* Bouton est visible */
+    #menuButton {
+        position: fixed;
+        right: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 3000;
+    }
+
+
+
+
+
 
 
       
