@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="style.css"/> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" type="text/javascript" defer></script>
-
-
     <title>Destination</title>
 </head>
 
@@ -29,6 +28,14 @@
         <a class="ONGLET" href="technology.php"> <b>03 </b> Technology</a>
     </div>
 
+
+
+     <!-- Bouton  -->
+   <button id="menuButton">
+        <span id="hamburgerIcon">☰</span>
+        <span id="closeIcon" style="display: none;">✖</span>
+    </button>
+
 </nav>
 
 
@@ -47,7 +54,6 @@
     <div id="EnglobeLigneDestination">
             <img id="IMGPLANETE" src="" alt="Image de la planète">
         
-        
         <div id="ChoixPlanete" >
             <ul>
                 <li><a id="marsBtn" onclick="showPlanetInfo('mars')" >Mars</a></li>
@@ -61,7 +67,9 @@
                     <!-- infos seront injectées ici avec JS -->
             </div>
         </div>
+
     </div>
+
 </div>
 </div>
 

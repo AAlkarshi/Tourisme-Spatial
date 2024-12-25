@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     two and a half times the size of Everest!
                     </p>
 
-                    <hr />
+                     <hr class="ligneSurDistanceetTemps" />
 
                     <div class="EnglobeDistanceetDuree" style="display: flex; justify-content: space-between;">
                         <div style="flex: 1; padding: 10px;">
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                          there, take in some history by visiting the Luna 2 and Apollo 11 landing <br>
                          sites.</p>
                 
-                        <hr />
+                        <hr class="ligneSurDistanceetTemps" />
                 
                         <div class="EnglobeDistanceetDuree" style="display: flex; justify-content: space-between;">
                             <div style="flex: 1; padding: 10px;">
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
                        skating, curling, hockey, or simple relaxation in your snug wintery cabin.
                     </p>
 
-                    <hr />
+                        <hr class="ligneSurDistanceetTemps" />
 
                 <div class="EnglobeDistanceetDuree">
                     <div style="flex: 1; padding: 10px;">
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
                        As a bonus, you get striking views of the Rings of Saturn.
                     </p>
 
-                    <hr />
+                     <hr class="ligneSurDistanceetTemps" />
 
                     <div class="EnglobeDistanceetDuree">
                         <div style="flex: 1; padding: 10px;">

@@ -867,6 +867,8 @@ nav{
 
 /* ENTRE TABLETTE 768px et ORDI 1023*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /*HOME */
     #CORPS {
       background-image: url('assets/home/background-home-tablet.jpg') !important;
       background-size: cover; 
@@ -1041,18 +1043,357 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-       
         font-family: "Bellefair", sans-serif;
         font-size: 32px;
         line-height: 37px;
         letter-spacing: 2px;
         padding-bottom: 15px;
-       
+    }
+
+
+
+
+
+
+
+ /*DESTINATION */
+
+/* MODIFIER img de FOND qd on passe entre les pixels pr TABLETTE*/
+    body {
+        background-image: url('assets/destination/background-destination-tablet.jpg') !important;
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+      }
+    
+    #EnglobeLigneDestination{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        width: 100%;
+        align-items: center;
+        gap: 20%;       
+        padding: 0;
+        box-sizing: inherit;
+        margin: 64px 0 118px 0;
+        text-align: center;
+    }
+
+    #IMGPLANETE{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        height: 300px;
+        width: 300px;
+        margin-left: 0px;
+        margin-bottom: 53px;
+    }
+
+
+    #ChoixPlanete {
+        display: flex;
+        flex-direction: column; 
+        width: 100%; 
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        gap: 20px; 
+    }
+    
+    #ChoixPlanete ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%; 
+
+        gap: 15px; 
+        list-style: none; 
+        padding: 0;
+        margin: 0;
     }
     
     
+    
+    #ChoixPlanete ul li a {
+        text-decoration: none; 
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        padding: 5px 10px; 
+        cursor: pointer;
+        border: 1px solid transparent; 
+        transition: border-color 0.3s ease; 
+        margin: 0;
+        box-sizing: inherit;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+    }
+
+    #TextesousMARS{
+        color: white;
+        font-family: 'Bellefair';
+        line-height: 1.5;
+        display: none; 
+        width: 100%;
+    }
+
+    .NOMDELAPLANETE{
+        text-align: center;
+        box-sizing: inherit;
+        font-family: "Bellefair", sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-size: 80px;
+        padding-top: 37px;
+        padding: 0;
+    }
+
+    .planetetexte{
+        padding: 0;
+        box-sizing: inherit;
+        font-family: "Barlow Condensed", sans-serif;
+        color: #d0d6f9;
+        max-width: 444px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0 auto;
+        height: 150px;
+    }
+
+    .EnglobeDistanceetDuree{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        display: flex;
+        flex-direction: row;
+        gap: 79px;
+        justify-content: center;
+
+        
+    }
+
+    .AnneeVoyageTemps{
+        margin: 0;
+    }
+
+    .NombreDistanceKM{
+        margin: 0;
+    }
+
+    .ligneSurDistanceetTemps{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        height: 1px;
+        background: #383B4B;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    /*EQUIPAGE*/
+     body {
+        background-image: url('assets/crew/background-crew-tablet.jpg') !important;
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        overflow-y: scroll;
+      }
+
+      #EnglobeLigneEquipage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+
+
+      
+.NomRoleEquipage{
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    opacity: .5;
 }
-  
+
+.NomMembreEquipage{
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0;
+    margin: 15px 0 27px 0;
+}
+
+
+
+#ChoixEquipage {
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+}
+
+#ChoixEquipage ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#ChoixEquipage #texteEquipage {
+    flex-grow: 1; 
+}
+
+
+#texteEquipage{
+    padding-top: 154px;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+#ChoixEquipage img {
+    max-width: 300px; 
+    height: auto; 
+    align-self: flex-start; 
+}
+
+
+#EnglobeLigneEquipage{
+    display: flex;
+    width: 100%;
+    gap: 20%;
+    padding: 0;
+    box-sizing: inherit;
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+
+
+.crew__role-btn {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    border: none;
+    transition: all .5s;
+    cursor: pointer;
+    background-color: #ffffff !important;
+    opacity: 1;
+    margin: 90px 0 61px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.crew__role-btn:hover {
+    background-color: #ccc; 
+    transform: scale(1.05); 
+}
+
+.crew__role-btn.selected {
+    background-color: #555; 
+    color: white; 
+}
+
+.container{
+    margin: 0;
+    box-sizing: inherit;
+    padding: 0  70px;
+
+    
+}
+
+#PointBlanc{
+    display: flex;
+    flex-direction : row;
+    gap: 15px;
+    margin: 0;
+    width:100%;
+    justify-content: flex-start;
+    padding: 0;
+    box-sizing: inherit;
+    margin: 90px 0 61px 0;
+    display: flex;
+    gap: 15px;
+
+
+}
+
+
+#IMGMembreEquipage{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+
+    
+}
+
+
+
+
+    
+
+
+    
+    
+}
 
 
 
@@ -1088,6 +1429,8 @@ nav{
 
 
   /* POUR MOBILE SOUS 768px */
+  
+  /*HOME*/
 @media screen and (max-width: 768px)  {
     #CORPS {
       background-image: url('assets/home/background-home-mobile.jpg') !important;
@@ -1200,14 +1543,10 @@ nav{
 
 
 
-
-
+/*BUTTON BURGER*/
 nav{
     padding-top: 25px;
 }
-
-
-
 
     /*ENSEMBLE DES ONGLETS*/
     #EnglobeOnglet {     
@@ -1278,17 +1617,255 @@ nav{
         z-index: 3000;
     }
 
-
-
-
-
-
-
-      
-
     #BarreHorizontal{
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ /*DESTINATION pour MOBILE*/
+
+/* MODIFIER img de FOND qd on passe entre les pixels pr TABLETTE*/
+body {
+    background-image: url('assets/destination/background-destination-mobile.jpg') !important;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+
+
+
+  #TitreChoixDestination{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+#EnglobeLigneDestination{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    align-items: center;
+    gap: 20%;       
+    padding: 0;
+    box-sizing: inherit;
+    margin: 64px 0 118px 0;
+    text-align: center;
+}
+
+#IMGPLANETE{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    height: 300px;
+    width: 300px;
+    margin-left: 0px;
+    margin-bottom: 53px;
+}
+
+
+#ChoixPlanete {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 20px; 
+}
+
+#ChoixPlanete ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    box-sizing: inherit;
+    gap: 35px;
+    cursor: pointer;
+}
+
+
+
+#ChoixPlanete ul li a {
+    text-decoration: none; 
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    cursor: pointer;
+    border: 1px solid transparent; 
+    transition: border-color 0.3s ease; 
+    margin: 0;
+    box-sizing: inherit;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    display: inline-block;
+}
+
+#TextesousMARS{
+    color: white;
+    font-family: 'Bellefair';
+    line-height: 1.5;
+    display: none; 
+    width: 100%;
+}
+
+.NOMDELAPLANETE{
+    text-align: center;
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-size: 56px;
+    padding-top: 37px;
+}
+
+.planetetexte{
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #d0d6f9;
+    max-width: 444px;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-top: 14px;
+    padding-bottom: 32px;
+}
+
+.EnglobeDistanceetDuree{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    
+}
+
+
+.EnglobeDistanceetDuree > div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    
+}
+
+.TitreAVGDistance{
+    text-align: center;
+   
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.AnneeVoyageTemps{
+    margin: 0;
+}
+
+.NombreDistanceKM{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Bellefair", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.ligneSurDistanceetTemps{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    height: 1px;
+    background: #383B4B;
+}
+
+
+
+
+
 
 
 
