@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"/> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" type="text/javascript" defer></script>
 
 
@@ -28,6 +29,13 @@
         <a class="ONGLET" href="equipage.php"> <b>02 </b> Crew</a>
         <a class="ONGLET" href="technology.php"> <b>03 </b> Technology</a>
     </div>
+
+
+    <!-- Bouton  -->
+   <button id="menuButton">
+        <span id="hamburgerIcon">☰</span>
+        <span id="closeIcon" style="display: none;">✖</span>
+    </button>
 
 </nav>
 
